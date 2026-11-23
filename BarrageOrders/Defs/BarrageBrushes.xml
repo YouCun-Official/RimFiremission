@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <DrawStyleDef>
+    <defName>BO_RectangleBrush</defName>
+    <label>creeping rectangle</label>
+    <drawStyleType>BarrageOrders.RectangleBrush</drawStyleType>
+    <uiIconPath>UI/Widgets/DrawStyles/RectangleFilled</uiIconPath>
+    <drawOutline>true</drawOutline>
+    <canSnap>false</canSnap>
+  </DrawStyleDef>
+  <DrawStyleDef>
+    <defName>BO_CircleBrush</defName>
+    <label>suppression circle</label>
+    <drawStyleType>BarrageOrders.CircleBrush</drawStyleType>
+    <uiIconPath>UI/Widgets/DrawStyles/OvalFilled</uiIconPath>
+    <drawArea>false</drawArea>
+    <canSnap>false</canSnap>
+  </DrawStyleDef>
+  <DrawStyleCategoryDef>
+    <defName>BO_Rectangle</defName>
+    <styles><li>BO_RectangleBrush</li></styles>
+  </DrawStyleCategoryDef>
+  <DrawStyleCategoryDef>
+    <defName>BO_Circle</defName>
+    <styles><li>BO_CircleBrush</li></styles>
+  </DrawStyleCategoryDef>
+</Defs>

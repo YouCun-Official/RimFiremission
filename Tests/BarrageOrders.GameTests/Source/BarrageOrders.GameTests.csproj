@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateDependencyFile>false</GenerateDependencyFile><DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BarrageOrders" HintPath="../../../BarrageOrders/Assemblies/BarrageOrders.dll" Private="false" />
+    <Reference Include="Assembly-CSharp" HintPath="$(RIMWORLD_MANAGED_DIR)/Assembly-CSharp.dll" Private="false" />
+    <Reference Include="UnityStubs" HintPath="$(RIMWORLD_MANAGED_DIR)/UnityStubs.dll" Private="false" />
+    <Reference Include="Waylith" HintPath="$(RIMWORLD_MANAGED_DIR)/Waylith.dll" Private="false" />
+    <Reference Include="Waylith.UnityCompat" HintPath="$(RIMWORLD_MANAGED_DIR)/Waylith.UnityCompat.dll" Private="false" />
+  </ItemGroup>
+</Project>

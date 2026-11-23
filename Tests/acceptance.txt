@@ -1,0 +1,131 @@
+Barrage Orders 1.0.0
+RimWorld 1.7.5014 rev1195
+2026-11-22
+SHA-256 BBAF4B623202245B1D34E1426B1290C0F24F1A262BF453FC491A6911C8B2D39D
+
+Core
+----
+PASS original single-target command remains
+PASS native, other-def subclass and fixed-projectile turret accepted
+PASS direct-fire turret excluded
+PASS reverse rectangle starts at pressed edge
+PASS filled centre/radius brush
+PASS circle clipped at map corner
+PASS zero-length circle selects one cell
+PASS native minimum range respected
+PASS overhead obstruction rejected
+PASS release ends designation
+PASS selected group shares one circle order
+PASS planned aim cells stay inside selected region
+PASS independent game effect mask covers every selected cell
+PASS no separate round per tile
+PASS removing one selected gun leaves the other on the shared order
+PASS cancel removes selected guns
+PASS initial equal-profile queues differ by at most one round
+PASS different native shell footprint changes the estimated count
+PASS each gun uses its own loaded shell
+PASS real native cast aimed inside the designated area
+PASS mid-order save written
+PASS same shared order restored from a real save
+PASS fired count persisted across reload
+PASS live group order fires from both guns and clears both native targets
+PASS completed staffed group balanced within one round
+PASS real ammunition consumed exactly once per observed projectile
+PASS native hold-fire suspends an already issued aim without cancelling the order
+PASS manual single-target order takes precedence
+PASS input manager starts captured drag
+PASS native drag preview contains exact cells for Creeping
+PASS native pointer release commits Creeping
+PASS native drag preview contains exact cells for Suppression
+PASS native pointer release commits Suppression
+PASS right-click cancels without issuing a task
+PASS custom verb burst size is used for the shot estimate
+PASS both shots in a native custom burst finish exactly once
+COMPLETE native=6 fixture=6
+
+Core + PLA-Armory
+-----------------
+PASS original single-target command remains
+PASS native, other-def subclass and fixed-projectile turret accepted
+PASS direct-fire turret excluded
+PASS reverse rectangle starts at pressed edge
+PASS filled centre/radius brush
+PASS circle clipped at map corner
+PASS zero-length circle selects one cell
+PASS native minimum range respected
+PASS overhead obstruction rejected
+PASS release ends designation
+PASS selected group shares one circle order
+PASS planned aim cells stay inside selected region
+PASS independent game effect mask covers every selected cell
+PASS no separate round per tile
+PASS removing one selected gun leaves the other on the shared order
+PASS cancel removes selected guns
+PASS initial equal-profile queues differ by at most one round
+PASS different native shell footprint changes the estimated count
+PASS each gun uses its own loaded shell
+PASS real native cast aimed inside the designated area
+PASS mid-order save written
+PASS same shared order restored from a real save
+PASS fired count persisted across reload
+PASS live group order fires from both guns and clears both native targets
+PASS completed staffed group balanced within one round
+PASS real ammunition consumed exactly once per observed projectile
+PASS native hold-fire suspends an already issued aim without cancelling the order
+PASS manual single-target order takes precedence
+PASS input manager starts captured drag
+PASS native drag preview contains exact cells for Creeping
+PASS native pointer release commits Creeping
+PASS native drag preview contains exact cells for Suppression
+PASS native pointer release commits Suppression
+PASS right-click cancels without issuing a task
+PASS custom verb burst size is used for the shot estimate
+PASS both shots in a native custom burst finish exactly once
+PASS shorter-range workshop turret rejects a cell the native mortar could reach
+PASS unmodified installed PLA-Armory mortar accepts an order
+PASS unmodified PLA-Armory mortar consumed the round and finished
+COMPLETE native=6 fixture=6
+
+CE 16.7.4.0 + PLA-Armory (979aed6f0d-rel)
+-----------------------------------------
+PASS real CE ammo system is enabled
+PASS unmanned CE turrets wait for a gunner
+PASS CE turrets show area controls alongside native commands
+PASS empty CE magazine reports selected shell as forecast only
+PASS two empty CE mortars can queue a rectangle
+PASS empty CE magazines do not issue or advance casts
+PASS changing a dry gun's CE selection updates its queued forecast
+PASS CE LoadAmmo inserted one actual inventory item
+PASS selection for the next CE reload does not replace the chambered projectile
+PASS CE cast target belongs to selected area
+PASS both real CE guns consumed exactly one item per cast and stopped
+PASS real CE group work balanced to one round
+PASS chambered CE projectiles cover every selected tile at their actual aim cells
+CE completed rectangle 3+2
+PASS changing CE shell changes projectile used by the order
+PASS CE single-cell circle order accepted
+PASS installed PLA-Armory turret actually uses CE turret code
+PASS CE suppression order fired and released the target
+COMPLETE Turret_Mortar=3, Turret_Mortar=2, PLA_Turret_PP93Mortar=1
+
+CE 16.7.4.0 + PLA-Armory (3b38e8d178-dev)
+-----------------------------------------
+PASS real CE ammo system is enabled
+PASS unmanned CE turrets wait for a gunner
+PASS CE turrets show area controls alongside native commands
+PASS empty CE magazine reports selected shell as forecast only
+PASS two empty CE mortars can queue a rectangle
+PASS empty CE magazines do not issue or advance casts
+PASS changing a dry gun's CE selection updates its queued forecast
+PASS CE LoadAmmo inserted one actual inventory item
+PASS selection for the next CE reload does not replace the chambered projectile
+PASS CE cast target belongs to selected area
+PASS both real CE guns consumed exactly one item per cast and stopped
+PASS real CE group work balanced to one round
+PASS chambered CE projectiles cover every selected tile at their actual aim cells
+CE completed rectangle 3+2
+PASS changing CE shell changes projectile used by the order
+PASS CE single-cell circle order accepted
+PASS installed PLA-Armory turret actually uses CE turret code
+PASS CE suppression order fired and released the target
+COMPLETE Turret_Mortar=3, Turret_Mortar=2, PLA_Turret_PP93Mortar=1

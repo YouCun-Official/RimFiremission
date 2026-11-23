@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Barrage Orders · 迫击炮弹幕指令</name>
+  <author>Barrage Orders</author>
+  <packageId>local.barrageorders</packageId>
+  <supportedVersions>
+    <li>1.7</li>
+  </supportedVersions>
+  <loadAfter>
+    <li>ceteam.combatextended</li>
+  </loadAfter>
+  <modVersion>1.0.0</modVersion>
+  <description>为支持地面强制目标的曲射炮塔添加矩形徐进弹幕和实心圆压制弹幕。拖选地图区域，为一门或多门炮安排一次有限的射击任务。&#10;&#10;Drag a rectangle or a circle to give selected indirect-fire turrets a finite group order. Uses the selected weapons' current projectiles and RimWorld's normal firing rules.</description>
+</ModMetaData>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BaseArtilleryBuilding">
+    <defName>BOQA_OtherMortar</defName><label>fixture mortar</label>
+    <description>Independent turret definition using a native interchangeable gun.</description>
+    <thingClass>BarrageOrders.GameTests.FixtureTurret</thingClass>
+    <building><turretGunDef>Artillery_Mortar</turretGunDef><turretBurstWarmupTime>0.2</turretBurstWarmupTime><turretBurstCooldownTime>2</turretBurstCooldownTime></building>
+  </ThingDef>
+  <ThingDef ParentName="BaseArtilleryWeapon">
+    <defName>BOQA_FoamGun</defName><label>fixture foam launcher</label><description>A fixed foam projectile fixture.</description>
+    <graphicData><texPath>Things/Building/Security/TurretMortar_Top</texPath></graphicData>
+    <verbs><li>
+      <verbClass>BarrageOrders.GameTests.FixtureBurst</verbClass><requireLineOfSight>false</requireLineOfSight>
+      <defaultProjectile>Bullet_Shell_Firefoam</defaultProjectile>
+      <range>95</range><burstShotCount>1</burstShotCount><warmupTime>0.2</warmupTime>
+      <targetParams><canTargetLocations>true</canTargetLocations></targetParams>
+    </li></verbs>
+  </ThingDef>
+  <ThingDef ParentName="BaseArtilleryBuilding">
+    <defName>BOQA_FixedTurret</defName><label>fixture foam turret</label>
+    <description>A second-party fixed-ammunition indirect-fire turret.</description>
+    <thingClass>BarrageOrders.GameTests.FixtureTurret</thingClass>
+    <building><buildingTags Inherit="False"/><turretGunDef>BOQA_FoamGun</turretGunDef><turretBurstWarmupTime>0.2</turretBurstWarmupTime><turretBurstCooldownTime>2</turretBurstCooldownTime></building>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <BO_Creep>徐进弹幕</BO_Creep>
+  <BO_CreepDesc>按住左键，从起始边拖出一个矩形。选中的炮从起始边向拖动方向逐批推进。右键或 Esc 取消拖选。</BO_CreepDesc>
+  <BO_Circle>压制弹幕</BO_Circle>
+  <BO_CircleDesc>在圆心按住左键，向外拖动设置半径。选中的炮共同完成圆内的射击任务。右键或 Esc 取消拖选。</BO_CircleDesc>
+  <BO_Stop>取消弹幕</BO_Stop>
+  <BO_StopDesc>取消所选炮的弹幕任务。参与同一任务的其他炮会接手剩余的区域。</BO_StopDesc>
+  <BO_RectHint>从起始边拖到结束边，松开下令</BO_RectHint>
+  <BO_CircleHint>从圆心拖到圆周，松开下令</BO_CircleHint>
+  <BO_Order>弹幕已下令。预计 {0} 发，{1} 门炮，计划覆盖 {2}/{3} 格。实际落点受游戏散布影响。</BO_Order>
+  <BO_Progress>弹幕：本炮已发射 {0} 发，预计剩余 {1} 发</BO_Progress>
+  <BO_Waiting>已记录弹幕区域，等待装入可识别的炮弹。</BO_Waiting>
+  <BO_OnHold>弹幕等待解除停火。</BO_OnHold>
+  <BO_NeedsAmmo>弹幕等待装填。</BO_NeedsAmmo>
+  <BO_NeedsCrew>弹幕等待炮手或炮塔就绪。</BO_NeedsCrew>
+  <BO_NoReach>所选炮无法在这个区域指定落点。</BO_NoReach>
+  <BO_Skipped>弹幕任务结束，尚有 {0} 格无法覆盖。</BO_Skipped>
+</LanguageData>

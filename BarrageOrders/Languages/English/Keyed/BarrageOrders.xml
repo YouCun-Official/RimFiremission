@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <BO_Creep>Creeping barrage</BO_Creep>
+  <BO_CreepDesc>Drag a rectangle from the starting edge. The selected guns advance across it in groups. Right-click or press Esc to cancel the drag.</BO_CreepDesc>
+  <BO_Circle>Suppression barrage</BO_Circle>
+  <BO_CircleDesc>Drag from the centre to set the radius. The selected guns share one finite order across the filled circle. Right-click or press Esc to cancel the drag.</BO_CircleDesc>
+  <BO_Stop>Cancel barrage</BO_Stop>
+  <BO_StopDesc>Remove selected guns from their barrage. Other participants take over the remaining area.</BO_StopDesc>
+  <BO_RectHint>Drag from the starting edge. Release to order.</BO_RectHint>
+  <BO_CircleHint>Drag from the centre to the rim. Release to order.</BO_CircleHint>
+  <BO_Order>Barrage ordered. Estimated {0} rounds across {1} guns, covering {2}/{3} cells. Actual impacts follow normal game scatter.</BO_Order>
+  <BO_Progress>Barrage rounds fired by this gun: {0}. Estimated remaining: {1}.</BO_Progress>
+  <BO_Waiting>Barrage area recorded. Waiting for a known projectile.</BO_Waiting>
+  <BO_OnHold>Waiting for hold fire to be released.</BO_OnHold>
+  <BO_NeedsAmmo>Waiting for a reload.</BO_NeedsAmmo>
+  <BO_NeedsCrew>Waiting for a gunner or an active turret.</BO_NeedsCrew>
+  <BO_NoReach>The selected guns cannot designate an aim cell in this area.</BO_NoReach>
+  <BO_Skipped>Barrage finished with {0} cells out of reach.</BO_Skipped>
+</LanguageData>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Barrage Orders game tests</name><author>Barrage Orders</author>
+  <packageId>local.barrageorders.gametests</packageId>
+  <supportedVersions><li>1.7</li></supportedVersions>
+  <loadAfter><li>local.barrageorders</li></loadAfter>
+  <description>Integration tests for an isolated rimworld-mod-mcp quicktest session.</description>
+</ModMetaData>

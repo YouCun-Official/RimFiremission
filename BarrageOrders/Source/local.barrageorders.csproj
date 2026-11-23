@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>BarrageOrders</AssemblyName>
+    <RootNamespace>BarrageOrders</RootNamespace>
+    <DebugType>none</DebugType>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup Condition="Exists('$(RIMWORLD_MANAGED_DIR)/Assembly-CSharp.dll')">
+    <Reference Include="Assembly-CSharp" HintPath="$(RIMWORLD_MANAGED_DIR)/Assembly-CSharp.dll" Private="false" />
+    <Reference Include="UnityStubs" HintPath="$(RIMWORLD_MANAGED_DIR)/UnityStubs.dll" Private="false" />
+    <Reference Include="Waylith" HintPath="$(RIMWORLD_MANAGED_DIR)/Waylith.dll" Private="false" />
+    <Reference Include="Waylith.UnityCompat" HintPath="$(RIMWORLD_MANAGED_DIR)/Waylith.UnityCompat.dll" Private="false" />
+  </ItemGroup>
+  <ItemGroup Condition="!Exists('$(RIMWORLD_MANAGED_DIR)/Assembly-CSharp.dll')">
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.7.4998-unstable" />
+  </ItemGroup>
+
+  <Target Name="InstallAssemblyInMod" AfterTargets="Build">
+    <MakeDir Directories="../Assemblies" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="../Assemblies" SkipUnchangedFiles="true" />
+  </Target>
+</Project>
